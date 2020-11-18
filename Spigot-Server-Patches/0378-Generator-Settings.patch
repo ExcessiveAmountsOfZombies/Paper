@@ -5,10 +5,10 @@ Subject: [PATCH] Generator Settings
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 617a8af814dc224762dc21669392960cc1702693..505fbd2e2bc5858d7400f07bf7319d0e32a1d0f3 100644
+index 7483624f2a2c60dba0413c93101f0f58a738635a..70038ea2939f8ede28a8ce0aa021b3a5f241b54d 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -559,4 +559,9 @@ public class PaperWorldConfig {
+@@ -561,4 +561,9 @@ public class PaperWorldConfig {
      private void perPlayerMobSpawns() {
          perPlayerMobSpawns = getBoolean("per-player-mob-spawns", false);
      }

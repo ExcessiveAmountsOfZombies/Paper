@@ -5,10 +5,10 @@ Subject: [PATCH] Add option to nerf pigmen from nether portals
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 4438d567dd779650533c7128ae8b25b8fd369836..89f6de173225315783a09aae2fe77a3ede2b78d5 100644
+index 030c4d59ca63450f241f4628c4a7d71b8e68e88e..f8068af63d5018a805420f9b27591d9d6f375d58 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -583,4 +583,9 @@ public class PaperWorldConfig {
+@@ -585,4 +585,9 @@ public class PaperWorldConfig {
          disableHopperMoveEvents = getBoolean("hopper.disable-move-event", disableHopperMoveEvents);
          log("Hopper Move Item Events: " + (disableHopperMoveEvents ? "disabled" : "enabled"));
      }
@@ -32,7 +32,7 @@ index a224a04ee1bb9705166913ef1c66aa031d87c270..4132cd4c6f13cfa1c0cda43daaa908ff
              }
          }
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 240675705fe52af6326b78ce0e3bf8ec0e8b50e1..d728a3aae38c083fe8dfa28a8b8460545e99bcb9 100644
+index 1526591ee7fbf89f18d35ab61a156ccc74916fba..9b996a5468926bc423e0b60c4aeb39d8b0766cad 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
 @@ -189,6 +189,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke

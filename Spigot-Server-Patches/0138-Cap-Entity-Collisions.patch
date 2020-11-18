@@ -12,10 +12,10 @@ just as it does in Vanilla, but entity pushing logic will be capped.
 You can set this to 0 to disable collisions.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index c221e9501998de14194bd91018efbc113308198c..11106a20ccc161f18c1d5491785e44bb84f8a821 100644
+index e3d1b10cd10a35aaeac7be1d16bf2523e8658a30..91ad374e013718f93fc0c54f3606a2f60bbcef77 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -318,4 +318,10 @@ public class PaperWorldConfig {
+@@ -320,4 +320,10 @@ public class PaperWorldConfig {
              log("Treasure Maps will return already discovered locations");
          }
      }
@@ -27,7 +27,7 @@ index c221e9501998de14194bd91018efbc113308198c..11106a20ccc161f18c1d5491785e44bb
 +    }
  }
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 170dad8be525b40d764b6e63c981f7b73775a01b..97abed1cede09624748e40331a15a021939568be 100644
+index 3d8d9d94ff82536c46b788dc60dfdcf6378085e5..10d5deb317577956617875f230a4ec1097180633 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
 @@ -183,6 +183,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke

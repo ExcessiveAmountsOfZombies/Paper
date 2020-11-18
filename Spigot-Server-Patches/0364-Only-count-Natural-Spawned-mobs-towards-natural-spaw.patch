@@ -17,10 +17,10 @@ This should fully solve all of the issues around it so that only natural
 influences natural spawns.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index b9410e3affed4004548acdc9355ac14d18c4a2c8..90e8defde0ef84f3146c8664805d6f11b84c593d 100644
+index e18f5f613182bec5b8f52d674eb80dcbd6173383..0cf1a8819d5b617d152ecec87ae8230b5c57c279 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -458,6 +458,16 @@ public class PaperWorldConfig {
+@@ -460,6 +460,16 @@ public class PaperWorldConfig {
          maxAutoSaveChunksPerTick = getInt("max-auto-save-chunks-per-tick", 24);
      }
  
@@ -38,7 +38,7 @@ index b9410e3affed4004548acdc9355ac14d18c4a2c8..90e8defde0ef84f3146c8664805d6f11
      public EngineMode engineMode;
      public int maxChunkSectionIndex;
 diff --git a/src/main/java/net/minecraft/server/SpawnerCreature.java b/src/main/java/net/minecraft/server/SpawnerCreature.java
-index 2561ba9b9c02ccb59bd7284ddfe62889911d4220..99d4d6b4bdedcba7964ddc99467b8f8e5229b98a 100644
+index 60f0301747ff2363007791432471c20471d79f01..979988c3c39afd80ce0b99a65dff5618a69ab600 100644
 --- a/src/main/java/net/minecraft/server/SpawnerCreature.java
 +++ b/src/main/java/net/minecraft/server/SpawnerCreature.java
 @@ -48,6 +48,13 @@ public final class SpawnerCreature {

@@ -5,10 +5,10 @@ Subject: [PATCH] incremental chunk saving
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index e9c03546c42657dd5f5d4c6f71bd7e0cc7e2cb15..d1ff673d8b5aafac58b082c9abc9257f0b2dfb15 100644
+index ee6d81b88707dcbb7decde6597e867f19e8a601b..85801816078889dfcb1717c3ac6e6b50c60fda4d 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -440,4 +440,19 @@ public class PaperWorldConfig {
+@@ -442,4 +442,19 @@ public class PaperWorldConfig {
          keepLoadedRange = (short) (getInt("keep-spawn-loaded-range", Math.min(spigotConfig.viewDistance, 10)) * 16);
          log( "Keep Spawn Loaded Range: " + (keepLoadedRange/16));
      }

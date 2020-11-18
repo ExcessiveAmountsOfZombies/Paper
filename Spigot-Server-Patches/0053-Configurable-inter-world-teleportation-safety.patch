@@ -16,12 +16,12 @@ The wanted destination was on top of the emerald block however the player ended 
 This only is the case if the player is teleporting between worlds.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index cff769a0cffd81501f919fad0c6456e1268bd223..a6c02f676f4206f2f59862530999cd74a2e0c20f 100644
+index bb9b54ee0a3f705574394329919febfcb9ef837a..764435f8aaa4739156375f3d908468d758847bc0 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -199,4 +199,9 @@ public class PaperWorldConfig {
-         portalSearchRadius = getInt("portal-search-radius", 128);
+@@ -201,4 +201,9 @@ public class PaperWorldConfig {
          portalCreateRadius = getInt("portal-create-radius", 16);
+         portalSearchRadiusNetherNerf = getBoolean("portal-search-radius-nether-nerf", true);
      }
 +
 +    public boolean disableTeleportationSuffocationCheck;

@@ -14,7 +14,7 @@ Adds flying monsters to control ghast and phantoms
 Adds villagers as separate config
 
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index ba18da7b9d069b1d553c2ae8838296351e3358aa..1fa7b82685a5e55d57d78abd5151f20e20178646 100644
+index bd583deaa0c4874bd30cabf9edb5bfcc372970ed..84cddd5e869d725906b39e53f653a552ef2e0932 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
 @@ -163,7 +163,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
@@ -64,7 +64,7 @@ index ba18da7b9d069b1d553c2ae8838296351e3358aa..1fa7b82685a5e55d57d78abd5151f20e
      public void k(Entity entity) {
          this.a(entity, Entity::setPosition);
      }
-@@ -2723,6 +2733,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
+@@ -2729,6 +2739,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
          return this.ae;
      }
  

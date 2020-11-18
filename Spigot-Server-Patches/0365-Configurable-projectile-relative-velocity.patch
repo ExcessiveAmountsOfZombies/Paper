@@ -25,10 +25,10 @@ P3) Solutions for 1) and especially 2) might not be future-proof, while this
 server-internal fix makes this change future-proof.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 90e8defde0ef84f3146c8664805d6f11b84c593d..36eff622d5638f1bd11b7b4ebe97036205ccf88b 100644
+index 0cf1a8819d5b617d152ecec87ae8230b5c57c279..35b3856688a2e2f0a36e1d2143967445b5b4157b 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -496,4 +496,9 @@ public class PaperWorldConfig {
+@@ -498,4 +498,9 @@ public class PaperWorldConfig {
          }
          log("Anti-Xray: " + (antiXray ? "enabled" : "disabled") + " / Engine Mode: " + engineMode.getDescription() + " / Up to " + ((maxChunkSectionIndex + 1) * 16) + " blocks / Update Radius: " + updateRadius);
      }

@@ -6,10 +6,10 @@ Subject: [PATCH] Configurable Keep Spawn Loaded range per world
 This lets you disable it for some worlds and lower it for others.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index a9a3dbbe7608d1f0dc122fe8d49928e7e3fa1438..e9c03546c42657dd5f5d4c6f71bd7e0cc7e2cb15 100644
+index cc3f5970596d8e746b7f8b083adb1b02eee3fbd2..ee6d81b88707dcbb7decde6597e867f19e8a601b 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -434,4 +434,10 @@ public class PaperWorldConfig {
+@@ -436,4 +436,10 @@ public class PaperWorldConfig {
                  break;
          }
      }

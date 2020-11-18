@@ -8,10 +8,10 @@ This allows you to solve an issue in vanilla behavior where:
 * On normal difficulty they will have a 50% of getting infected or dying.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index fd0e58574f4f07913161be489d031a011f059f8e..f0f94ac2432ad79d2957b7f723fe7eb9cbd36507 100644
+index dedd4c8e12230f65102248b72a6ffa570a39aad4..da35b998abc3022c8d39a230b73e3068214823d8 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -593,4 +593,9 @@ public class PaperWorldConfig {
+@@ -595,4 +595,9 @@ public class PaperWorldConfig {
      private void nerfNetherPortalPigmen() {
          nerfNetherPortalPigmen = getBoolean("game-mechanics.nerf-pigmen-from-nether-portals", nerfNetherPortalPigmen);
      }

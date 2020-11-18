@@ -5,10 +5,10 @@ Subject: [PATCH] Allow disabling armour stand ticking
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 54d7f6efcf42d4c7a8c209dfe3c5485318afafe3..5ea60c713426f11e420360a08a9ea1039d4f6b02 100644
+index 44752100985bd4c1b1e7f89afb45fdb15f90f8a5..3e5e0a10483aadf6253a0b1bf8620081ed8cf815 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -378,4 +378,10 @@ public class PaperWorldConfig {
+@@ -380,4 +380,10 @@ public class PaperWorldConfig {
      private void armorStandEntityLookups() {
          armorStandEntityLookups = getBoolean("armor-stands-do-collision-entity-lookups", true);
      }

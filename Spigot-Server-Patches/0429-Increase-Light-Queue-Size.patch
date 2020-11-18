@@ -14,10 +14,10 @@ light engine on shutdown...
 The queue size only puts a cap on max loss, doesn't solve that problem.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 1b49c214998a5a9b424472df040d634d9fcc0c4a..d7e22e1bf886800adbe8ed7baa3349e5d2ee1818 100644
+index bf12819d433524eedb2fd70e9e828686c01c4856..bc3273547adbd15eef03f284b71c3c1eac261eb6 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -609,4 +609,9 @@ public class PaperWorldConfig {
+@@ -611,4 +611,9 @@ public class PaperWorldConfig {
      private void zombieVillagerInfectionChance() {
          zombieVillagerInfectionChance = getDouble("zombie-villager-infection-chance", zombieVillagerInfectionChance);
      }

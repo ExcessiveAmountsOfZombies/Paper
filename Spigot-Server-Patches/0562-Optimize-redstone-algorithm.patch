@@ -19,10 +19,10 @@ Aside from making the obvious class/function renames and obfhelpers I didn't nee
 Just added Bukkit's event system and took a few liberties with dead code and comment misspellings.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 5e2ae5758d6e649d00f8047c7ab0d263fd7f96e8..8923314d731dea5c2707dbb271b8b0819d826a2e 100644
+index b163e18f12991fafeb8261941adf53571d7c23c2..ad907ef7f22a09304baee8fa47b2e6a71176025b 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -662,4 +662,14 @@ public class PaperWorldConfig {
+@@ -664,4 +664,14 @@ public class PaperWorldConfig {
      private void zombiesTargetTurtleEggs() {
          zombiesTargetTurtleEggs = getBoolean("zombies-target-turtle-eggs", zombiesTargetTurtleEggs);
      }

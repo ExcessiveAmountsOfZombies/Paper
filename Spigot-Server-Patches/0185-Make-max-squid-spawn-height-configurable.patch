@@ -7,10 +7,10 @@ I don't know why upstream made only the minimum height configurable but
 whatever
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 4bb901966f7b1b6537a2b6b1dc0f0bdfd4338ce6..4571fd98a9faeb461666fc5c262a95b9e7fa04b6 100644
+index 98864cf33a5c4a45e1fcf567f62acfbfe6a7b15c..8ffec0e30eff15cda802cebbe8e16b1114f97df6 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -342,4 +342,9 @@ public class PaperWorldConfig {
+@@ -344,4 +344,9 @@ public class PaperWorldConfig {
          expMergeMaxValue = getInt("experience-merge-max-value", -1);
          log("Experience Merge Max Value: " + expMergeMaxValue);
      }

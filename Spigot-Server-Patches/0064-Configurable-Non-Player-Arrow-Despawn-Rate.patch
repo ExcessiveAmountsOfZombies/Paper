@@ -6,10 +6,10 @@ Subject: [PATCH] Configurable Non Player Arrow Despawn Rate
 Can set a much shorter despawn rate for arrows that players can not pick up.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 1f229e68349f49d7c461b1d9895a70968304be7f..4c956da69261d3092cd9abb1b98f7c9a220cc91e 100644
+index a8e556598df3beaa222e50886a054893e69a106b..33ce1f9d847cb256ac34b75f55459636f8d24cad 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -209,4 +209,19 @@ public class PaperWorldConfig {
+@@ -211,4 +211,19 @@ public class PaperWorldConfig {
      private void nonPlayerEntitiesOnScoreboards() {
          nonPlayerEntitiesOnScoreboards = getBoolean("allow-non-player-entities-on-scoreboards", false);
      }

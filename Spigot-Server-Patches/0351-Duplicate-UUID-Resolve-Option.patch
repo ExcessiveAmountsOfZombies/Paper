@@ -33,10 +33,10 @@ But for those who are ok with leaving this inconsistent behavior, you may use WA
 It is recommended you regenerate the entities, as these were legit entities, and deserve your love.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 6f410120018f95259e9e4f504ea1b588c2b4622b..a9a3dbbe7608d1f0dc122fe8d49928e7e3fa1438 100644
+index 8faed1bb70804f71b1267835171a2271a417a2a4..cc3f5970596d8e746b7f8b083adb1b02eee3fbd2 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -395,4 +395,43 @@ public class PaperWorldConfig {
+@@ -397,4 +397,43 @@ public class PaperWorldConfig {
      private void preventMovingIntoUnloadedChunks() {
          preventMovingIntoUnloadedChunks = getBoolean("prevent-moving-into-unloaded-chunks", false);
      }
@@ -93,10 +93,10 @@ index 6154f7a7973168cbe294bc0f40894f05bf20513e..0f8745ede62894f8d88fc8985e34b32a
  
          int k = MathHelper.floor(entity.locY() / 16.0D);
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 073660a67ece962981b388a8b0f5402ce2a430c6..ba18da7b9d069b1d553c2ae8838296351e3358aa 100644
+index 955e4c6c7be755cf1dc062694ecfa743ffe25770..bd583deaa0c4874bd30cabf9edb5bfcc372970ed 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
-@@ -2705,6 +2705,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
+@@ -2711,6 +2711,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
          });
      }
  

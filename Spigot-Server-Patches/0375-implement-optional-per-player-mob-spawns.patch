@@ -25,10 +25,10 @@ index a27dc38d1a29ed1d63d2f44b7984c2b65be487d9..96aaaab5b7685c874463505f9d25e8a0
          poiUnload = Timings.ofSafe(name + "Chunk unload - POI");
          chunkUnload = Timings.ofSafe(name + "Chunk unload - Chunk");
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index fb84e7ca2873bcb5fed80b7ce58cf38a376289ed..617a8af814dc224762dc21669392960cc1702693 100644
+index 77bdada4ec102fb7ed8f868b99f54e8d6cafcf05..7483624f2a2c60dba0413c93101f0f58a738635a 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -554,4 +554,9 @@ public class PaperWorldConfig {
+@@ -556,4 +556,9 @@ public class PaperWorldConfig {
              }
          }
      }

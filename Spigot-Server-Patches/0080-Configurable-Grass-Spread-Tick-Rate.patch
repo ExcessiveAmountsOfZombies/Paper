@@ -5,10 +5,10 @@ Subject: [PATCH] Configurable Grass Spread Tick Rate
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 6babdde2910162a03b8abbcbb7db1f78eb3376c2..f433b1e46b1e97fa60f1bd32a1403189217d3afd 100644
+index a7ec61b9cdf4581e762e83e188eadfeaea9dcb35..16ee977caa47ab5128e76a8a85059c22d79e824e 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -242,4 +242,10 @@ public class PaperWorldConfig {
+@@ -244,4 +244,10 @@ public class PaperWorldConfig {
          }
          fixedInhabitedTime = getInt("fixed-chunk-inhabited-time", -1);
      }

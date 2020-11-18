@@ -13,10 +13,10 @@ Subject: [PATCH] Optimize Hoppers
 * Remove Streams from Item Suck In and restore restore 1.12 AABB checks which is simpler and no voxel allocations (was doing TWO Item Suck ins)
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 7453becf8c56bd41a7e532c08c4f274026eadefb..4438d567dd779650533c7128ae8b25b8fd369836 100644
+index 7252ad91cdc030f89daceebb2bbb744d5832527f..030c4d59ca63450f241f4628c4a7d71b8e68e88e 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -574,4 +574,13 @@ public class PaperWorldConfig {
+@@ -576,4 +576,13 @@ public class PaperWorldConfig {
      private void entitiesTargetWithFollowRange() {
          entitiesTargetWithFollowRange = getBoolean("entities-target-with-follow-range", entitiesTargetWithFollowRange);
      }

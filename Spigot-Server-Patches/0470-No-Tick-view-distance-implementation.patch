@@ -23,10 +23,10 @@ index c9164dfdb27ddf3709129c8aec54903a1df121ff..e33e889c291d37a821a4fbd40d9aac7b
          }));
  
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index de95bd406173c38fa8a745c201b5cd5fbec91702..9e55c800eb8b4dd4930dbf730bb6d106a2029036 100644
+index aa3fee76332881ae92b21564aa0726fee3789df6..5fce82db04c01fb8285aad1285bdeeea08352086 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -621,4 +621,9 @@ public class PaperWorldConfig {
+@@ -623,4 +623,9 @@ public class PaperWorldConfig {
          phantomIgnoreCreative = getBoolean("phantoms-do-not-spawn-on-creative-players", phantomIgnoreCreative);
          phantomOnlyAttackInsomniacs = getBoolean("phantoms-only-attack-insomniacs", phantomOnlyAttackInsomniacs);
      }
@@ -576,7 +576,7 @@ index b4067657eefe6a418b76b599b4c8ffb8359c3f89..3e73ef8059139b09518075bb6dc89a67
                          }
                      }
 diff --git a/src/main/java/net/minecraft/server/PlayerList.java b/src/main/java/net/minecraft/server/PlayerList.java
-index 7b20dd6d65288aca780f61bf2fc1acc47022af10..768adaa809e88412fcf8f7f60d6177667278f8fc 100644
+index 0f46aac9d021dc115718b1e36b8fbe28cbc820c6..b8ab8150b7dfe9e34910d35f565083e806c4fb0c 100644
 --- a/src/main/java/net/minecraft/server/PlayerList.java
 +++ b/src/main/java/net/minecraft/server/PlayerList.java
 @@ -175,7 +175,7 @@ public abstract class PlayerList {

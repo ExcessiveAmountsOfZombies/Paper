@@ -5,10 +5,10 @@ Subject: [PATCH] Option to prevent armor stands from doing entity lookups
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 6e7e00678295b5b714a1be4753626e21ab469fd6..54d7f6efcf42d4c7a8c209dfe3c5485318afafe3 100644
+index 07f797835adf02ed68c6c54e4ad8c0eb87cd249f..44752100985bd4c1b1e7f89afb45fdb15f90f8a5 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -373,4 +373,9 @@ public class PaperWorldConfig {
+@@ -375,4 +375,9 @@ public class PaperWorldConfig {
      private void scanForLegacyEnderDragon() {
          scanForLegacyEnderDragon = getBoolean("game-mechanics.scan-for-legacy-ender-dragon", true);
      }

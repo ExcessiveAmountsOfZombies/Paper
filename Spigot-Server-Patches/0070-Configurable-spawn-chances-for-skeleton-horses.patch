@@ -5,10 +5,10 @@ Subject: [PATCH] Configurable spawn chances for skeleton horses
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 4c956da69261d3092cd9abb1b98f7c9a220cc91e..6998ec2d7550094498649deb9028988700982e04 100644
+index 33ce1f9d847cb256ac34b75f55459636f8d24cad..cae52885e9818c0d38e0896670e3415ae25868e9 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -224,4 +224,12 @@ public class PaperWorldConfig {
+@@ -226,4 +226,12 @@ public class PaperWorldConfig {
          log("Non Player Arrow Despawn Rate: " + nonPlayerArrowDespawnRate);
          log("Creative Arrow Despawn Rate: " + creativeArrowDespawnRate);
      }
@@ -22,7 +22,7 @@ index 4c956da69261d3092cd9abb1b98f7c9a220cc91e..6998ec2d7550094498649deb90289887
 +    }
  }
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index e307f939745db9688e96c42a70d337e8751874f2..2dfecbc93c5de9ea67064ff2b8e041e173fc0be2 100644
+index 01fde964fa2fae3cfefc4b9e8e2c59a997d09539..51afd8277d1b00e299c44d198faa64179940a8ec 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -479,7 +479,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {

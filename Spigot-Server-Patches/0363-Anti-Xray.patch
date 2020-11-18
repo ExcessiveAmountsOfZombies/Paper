@@ -5,7 +5,7 @@ Subject: [PATCH] Anti-Xray
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index d1ff673d8b5aafac58b082c9abc9257f0b2dfb15..b9410e3affed4004548acdc9355ac14d18c4a2c8 100644
+index 85801816078889dfcb1717c3ac6e6b50c60fda4d..e18f5f613182bec5b8f52d674eb80dcbd6173383 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 @@ -1,7 +1,9 @@
@@ -18,7 +18,7 @@ index d1ff673d8b5aafac58b082c9abc9257f0b2dfb15..b9410e3affed4004548acdc9355ac14d
  import org.bukkit.Bukkit;
  import org.bukkit.configuration.file.YamlConfiguration;
  import org.spigotmc.SpigotWorldConfig;
-@@ -455,4 +457,33 @@ public class PaperWorldConfig {
+@@ -457,4 +459,33 @@ public class PaperWorldConfig {
      private void maxAutoSaveChunksPerTick() {
          maxAutoSaveChunksPerTick = getInt("max-auto-save-chunks-per-tick", 24);
      }
@@ -1414,7 +1414,7 @@ index 048cfcd32c774148f424b246b1f7048fd437afd8..e7ad9a926f58cc7e5d70229dd69f2f5b
              if (iblockdata1 == null) {
                  // CraftBukkit start - remove blockstate if failed (or the same)
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 5a35395434ffdefd410573302a3d46cca9642a81..6b52f9b9adce975cdafaf12b2a1bea5ef1bbaaa4 100644
+index 3c7752769fb6a2da644f9d41ef783de9772ce5f7..1ad867b6b8c743ab03a3c0c1a75fc92e548b5a64 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -100,7 +100,7 @@ public class WorldServer extends World implements GeneratorAccessSeed {

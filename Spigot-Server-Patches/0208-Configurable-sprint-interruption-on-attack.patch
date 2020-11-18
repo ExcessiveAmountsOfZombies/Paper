@@ -6,10 +6,10 @@ Subject: [PATCH] Configurable sprint interruption on attack
 If the sprint interruption is disabled players continue sprinting when they attack entities.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 924cc5b2dc7764fdf9185d32bb5c09225250778d..e3e529c00122eaf04c7085b1074c5dd124419513 100644
+index a137c6c0fb87194c441cef060f01219d85f5015a..36a3035f2ae379be50697e6543b527f8cb904057 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -352,4 +352,9 @@ public class PaperWorldConfig {
+@@ -354,4 +354,9 @@ public class PaperWorldConfig {
      private void squidMaxSpawnHeight() {
          squidMaxSpawnHeight = getDouble("squid-spawn-height.maximum", 0.0D);
      }

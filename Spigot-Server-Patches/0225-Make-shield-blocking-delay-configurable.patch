@@ -5,10 +5,10 @@ Subject: [PATCH] Make shield blocking delay configurable
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 0c8160aa7098f117d2a174ffd944741b11818d10..de80d2d874d1787335fd393f3ffed0cd36e3af9e 100644
+index 37839bc1a90f3125335cc67e8f455aad52924ec1..52bfbb819ed9303154eb4f103de0b7563cd24cbb 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -363,4 +363,9 @@ public class PaperWorldConfig {
+@@ -365,4 +365,9 @@ public class PaperWorldConfig {
          disableEnderpearlExploit = getBoolean("game-mechanics.disable-unloaded-chunk-enderpearl-exploit", disableEnderpearlExploit);
          log("Disable Unloaded Chunk Enderpearl Exploit: " + (disableEnderpearlExploit ? "enabled" : "disabled"));
      }

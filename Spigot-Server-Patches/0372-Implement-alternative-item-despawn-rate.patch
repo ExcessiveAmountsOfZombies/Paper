@@ -5,7 +5,7 @@ Subject: [PATCH] Implement alternative item-despawn-rate
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 36eff622d5638f1bd11b7b4ebe97036205ccf88b..fb84e7ca2873bcb5fed80b7ce58cf38a376289ed 100644
+index 35b3856688a2e2f0a36e1d2143967445b5b4157b..77bdada4ec102fb7ed8f868b99f54e8d6cafcf05 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 @@ -1,10 +1,15 @@
@@ -24,7 +24,7 @@ index 36eff622d5638f1bd11b7b4ebe97036205ccf88b..fb84e7ca2873bcb5fed80b7ce58cf38a
  import org.bukkit.configuration.file.YamlConfiguration;
  import org.spigotmc.SpigotWorldConfig;
  
-@@ -501,4 +506,52 @@ public class PaperWorldConfig {
+@@ -503,4 +508,52 @@ public class PaperWorldConfig {
      private void disableRelativeProjectileVelocity() {
          disableRelativeProjectileVelocity = getBoolean("game-mechanics.disable-relative-projectile-velocity", false);
      }

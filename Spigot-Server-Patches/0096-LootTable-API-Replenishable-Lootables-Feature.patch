@@ -11,10 +11,10 @@ This feature is good for long term worlds so that newer players
 do not suffer with "Every chest has been looted"
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index fd09df36c0f28f77b1f6c32b4e68da8a3ab59aa9..64da34a840dc433670675a30062b8b17c29dd0c4 100644
+index 87eaed7d3cd2b8ac396b53c20a244472c9fb2240..39732db46975c9ece4780aea0ac0b52d4c794e27 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -263,4 +263,26 @@ public class PaperWorldConfig {
+@@ -265,4 +265,26 @@ public class PaperWorldConfig {
          this.frostedIceDelayMax = this.getInt("frosted-ice.delay.max", this.frostedIceDelayMax);
          log("Frosted Ice: " + (this.frostedIceEnabled ? "enabled" : "disabled") + " / delay: min=" + this.frostedIceDelayMin + ", max=" + this.frostedIceDelayMax);
      }
@@ -518,7 +518,7 @@ index 0000000000000000000000000000000000000000..a1923aff2b5e2e867670a5a064a76791
 +    }
 +}
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 1769e9b0f3d358253b6387491589916f7bb219fe..92edb4474167fa95fd36ae9ef86a9eafd29f9b23 100644
+index f0a4341d80a54c2ee41fd69e7836fad85a185692..c9cf4cc18c569a4f09f5ebfc08ab30e5173b0e48 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
 @@ -73,6 +73,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke

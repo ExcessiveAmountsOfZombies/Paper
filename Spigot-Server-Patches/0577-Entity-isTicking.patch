@@ -5,10 +5,10 @@ Subject: [PATCH] Entity#isTicking
 
 
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 53fb4f04087c091f3354e74d6b94554601f2cbe0..d86b67a63b37569fc4ca69ec04305a330950b0f2 100644
+index 239945cf657bfb94dbd935d64cfdef082e24fbad..a2651528ec2952cfe8049f185c21d3577fa1e1f5 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
-@@ -3380,5 +3380,9 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
+@@ -3386,5 +3386,9 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
      public static int nextEntityId() {
          return entityCount.incrementAndGet();
      }
